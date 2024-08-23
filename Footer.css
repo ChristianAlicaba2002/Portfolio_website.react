@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 17vh;
+    z-index: 10;
+    border-top: 1px solid black;
+}
+.footer .phone{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.phone label{
+    margin-top: 17%;
+    margin-left: -25%;
+}
+.footer .email{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.emailh3{
+    margin-left: 20%;
+}
+.email label{
+    margin-top: 16%;
+    margin-left: -43%;
+}
+
+.footer .FollowMe{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.FollowMe .class_facebook{
+    font-size: 2rem;
+    margin-top: 150%;
+    margin-left: -250%;
+    color: blue;
+}
+.footer .moreInfo{
+    margin-left: 6%;
+}

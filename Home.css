@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px black;
+    z-index: 10;
+    padding-bottom: 10px;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 2rem;
+    letter-spacing: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 20px;
+    animation: name 1s ease-in-out;
+}
+@keyframes name {
+    from{
+        transform: translateX(-50px)
+    }
+}
+.profile{
+    width: 500px;
+    height: 540px;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-left: 18%;
+    animation: profilePic 0.9s ;
+}
+@keyframes profilePic { 
+    from{
+        transform: translateX(-100%);
+    }
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20%;
+    list-style: none;
+    margin-left: 55%;
+    margin-top: 20px;
+    animation: slideright 0.8s;
+}
+@keyframes slideright {
+    from{
+        transform: translateX(80%)
+    }
+}
+.navigation li{
+    padding: 5px 10px;
+    margin-bottom: -20px;
+}
+.navigation a{
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0px 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+.navigation a:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    margin-top: 5px;
+    background-color: rgb(0, 51, 255);
+    transition: 0.3s;
+}
+.navigation a:hover:after{
+    width: 410%;
+}
+.navigation a:hover{
+    color: rgb(0, 51, 255);
+}
+
+/* .Home:hover{
+    color: rgb(0, 106, 255);
+    border-bottom: 1px solid blue;
+}
+.Project:hover{
+    color: rgb(0, 106, 255);
+    border-bottom: 1px solid blue;
+}
+.Contact:hover{
+    color: rgb(0, 106, 255);
+    border-bottom: 1px solid blue;
+}
+.About:hover{
+    color: rgb(0, 106, 255);
+    border-bottom: 1px solid blue;
+} */
+.container{
+    display: flex;
+}
+.container .details{
+    margin-left: 6%;
+    margin-top: 4%;
+}
+.details h3{
+    font-size: 5rem;
+    text-shadow: 0 0 3px black;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    animation: h3Move 0.9s;
+}
+
+@keyframes h3Move {
+    from{
+        transform: translateY(-150%);
+    }
+}
+
+.details label{
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+
+.labels{
+    animation: movetoright 1s;
+}
+@keyframes movetoright {
+    from{
+        transform: translateX(-80%);
+    }
+}
+
+.details p{
+    letter-spacing: 2px;
+    margin-bottom: 4%;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    animation: labelmoveRight 0.9s;
+}
+@keyframes labelmoveRight {
+    from{
+        transform: translateX(120%);
+    }
+}
+.buttons{
+    display: flex;
+}
+.ContactMe{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    background-color: rgba(172, 255, 47, 0.552);
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: 200;
+    font-family: sans-serif;
+    border: 1px solid yellowgreen;
+    border-radius: 6px;
+    animation: contactslide 1.2s;
+}
+@keyframes contactslide {
+    from{
+        transform: translateX(300%);
+    }
+}
+.ContactMe:hover{
+    transform: translateY(-10px);
+    transition: 0.4s ease-in-out;
+    background-color: rgb(172, 255, 47);
+    color: white;
+}
+.Explore{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    background-color: rgba(0, 115, 255, 0.141);
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: 200;
+    font-family: sans-serif;
+    border: 1px solid rgb(0, 115, 255);
+    border-radius: 6px;
+    margin-left: 40px;
+    animation: exploreslide 1.5s;
+}
+@keyframes exploreslide {
+    from{
+        transform: translateX(250%);
+    }
+}
+.Explore:hover{
+    transform: translateY(-10px);
+    transition: 0.4s ease-in-out;
+    color: white;
+    background-color: rgb(0, 115, 255);
+}
+.Skills img{
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+    animation: slideUp 2s;
+    cursor: pointer;
+    width: 55px;
+}   
+@keyframes slideUp {
+    from{
+        transform: translateY(80%);
+    }
+}
+.Skills img:hover{
+    transition: 1s;
+   transform: translateY(-10px);
+}
+.paragraph{
+    box-shadow: 0 0 3px black;
+    padding: 5px;
+    margin-top: -40%;
+    background-color: rgb(255, 0, 0);
+    display: none;
+}
+.paragraph .meaning{
+    font-size: 12px;
+}

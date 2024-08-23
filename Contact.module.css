@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.contact{
+    font-size: 3rem;
+    display: flex;
+    margin-bottom: -2%;
+}
+.formtag{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    margin-top: 10%;
+    width: 40%;
+    height: 70vh;
+    margin-bottom: 50%;
+    margin-left: 20%;
+}
+input{
+    padding: 15px 20px;
+    margin-right: 50px;
+    margin-top: 10%;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 255, 0.19);
+    outline: none;
+    cursor: pointer;
+}
+input:hover{
+    background-color: rgba(173, 216, 230, 0.167);
+}
+input:focus{
+    border: 1px solid blue;
+}
+textarea{
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 255, 0.19);
+    outline: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+textarea:hover{
+    background-color: rgba(173, 216, 230, 0.167);
+}
+textarea:focus{
+    border: 1px solid blue;
+}
+::placeholder{
+    color: rgba(128, 128, 128, 0.844);
+}
+.container button{
+    display: flex;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.316);
+    margin-top: 10px;
+    margin-bottom: 20%;
+}
+.container button:hover{
+    color: white;
+    transition: 0.3s ease;
+    background-color: rgba(0, 34, 255, 0.777);
+}
+.container .email{
+    margin-top: 10px;
+}
